@@ -11,7 +11,7 @@ const itemsDB=ref(database,"items")
 const ul=document.getElementById("ul");
 const input= document.getElementById("input");
 const button = document.getElementById("button");
-
+//
 button.addEventListener("click",function() {
     let item=input.value;
     push(itemsDB,item);
