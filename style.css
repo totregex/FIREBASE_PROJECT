@@ -42,19 +42,42 @@ button{
     border:0;
 }
 ul{
+    padding:0;
     list-style: None;
-    margin :4px 5px;
+    margin:2px auto;
+    max-width:100%;
     display:flex;
     flex-wrap:wrap;
+    gap:10px;
 }
 li{
-    padding:12px;
-    background-color:#b56473;
-    width:46%;
+    padding:15px 25px;
+    background-color:#FFFDF8;
+    flex-grow:1;
     border-radius:23px;
-    margin:6px auto;
     border: rgb(208, 86, 208);
     text-align: center;
     color:#432000;
-    font-size: large;
+    font-size:20px;
+    box-shadow:0px 1px 4px rgba(0,0,0,0.2);
+}
+ul li:hover{
+    background-color: #FFECC7;
+    cursor:pointer;
+    transition:1.3s;
+}
+button:hover{
+    background-color: #432000;
+    cursor:pointer;
+    transition:1s;
+}
+@media (max-width:280px) {
+    .container{
+        display:flex;
+        flex-direction:column;
+        max-width:280px;
+        max-height:400px;
+        margin:40px auto;
+        padding:40px;
+    }
 }
